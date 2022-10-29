@@ -64,5 +64,6 @@ final class Version20221028225450 extends AbstractMigration
         $this->addSql('DROP TABLE comment');
         $this->addSql('DROP TABLE conference');
         $this->addSql('DROP TABLE messenger_messages');
+        $this->addSql('DROP TABLE sessions');
     }
 }
