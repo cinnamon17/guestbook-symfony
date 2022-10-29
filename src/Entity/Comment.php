@@ -34,7 +34,7 @@ class Comment
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?Conference $conference = null;
+    private Conference $conference;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $photoFilename = null;
